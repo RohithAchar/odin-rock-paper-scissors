@@ -14,13 +14,10 @@
 //check who won.
 
 
-//init playerScore to 0.
 let playerScore = 0;
-//init computerScore to 0.
 let computerScore = 0;
-//init array of [rock,paper,scissors]
 const choices = ["rock","paper","scissors"];
-//init count to 0.
+
 let count = 0;
 //function getComputerChoice return random element from array of [rock,paper,scissors]
 function getComputerChoice(){
