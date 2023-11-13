@@ -1,3 +1,19 @@
+//ALGORITHM
+//init playerScore to 0.
+//init computerScore to 0.
+//init array of [rock,paper,scissors]
+//init count to 0.
+//function getComputerChoice return random element from array of [rock,paper,scissors]
+//loop till count < 5.
+    //get input from computer.
+    //get input from user and convert it to lowercase.
+    //if player won add 10 to playerScore.
+    //if computer won add 10 to computerScore.
+    //if draw do nothing.
+//End loop
+//check who won.
+
+
 //init playerScore to 0.
 let playerScore = 0;
 //init computerScore to 0.
