@@ -54,11 +54,17 @@ while(count < 5){
 //End loop
 //check who won.
 if(playerScore === computerScore){
-    alert(`It's a draw.\nComputer score = ${computerScore}\nPlayer score = ${playerScore}`);
+    alert(`It's a draw.\n
+           Computer score = ${computerScore}\n
+           Player score = ${playerScore}`);
 }
 else if(playerScore > computerScore){
-    alert(`You won.\nComputer score = ${computerScore}\nPlayer score = ${playerScore}`);
+    alert(`You won.\n
+           Computer score = ${computerScore}\n
+           Player score = ${playerScore}`);
 }
 else{
-    alert(`You lost.\nComputer score = ${computerScore}\nPlayer score = ${playerScore}`);
+    alert(`You lost.\n
+           Computer score = ${computerScore}\n
+           Player score = ${playerScore}`);
 }
