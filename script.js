@@ -18,10 +18,8 @@ buttons.forEach(btn => {
 
 function reset(){
     title.textContent = "Select your choice."
-    playerScoreEle.textContent = "";
-    computerScoreEle.textContent = "";
-    playerChoiceEle.textContent = "";
-    computerChoiceEle.textContent = "";
+    playerScoreEle.textContent = "Your Score : 0"
+    computerScoreEle.textContent = "Computer Score : 0";
     playerChoice = "";
     computerChoice = "";
     playerScore = 0
