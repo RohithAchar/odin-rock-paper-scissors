@@ -1,4 +1,20 @@
+@font-face {
+    font-family: 'retro-bold'; /* Choose a unique name for your font */
+    src: url('fonts/upheavtt.ttf') format('truetype'); /* Adjust the path and format as needed */
+    /* You can include additional src lines for different font formats (e.g., woff, woff2) */
+}
+@font-face {
+    font-family: 'retro-thin'; /* Choose a unique name for your font */
+    src: url('fonts/rainyhearts.ttf') format('truetype'); /* Adjust the path and format as needed */
+    /* You can include additional src lines for different font formats (e.g., woff, woff2) */
+}
 .main-container{
     margin: 0 auto;
     text-align: center;
+}
+#title{
+    font-family: 'retro-bold';
+    letter-spacing: 3px;
+    color: aqua;
+    text-shadow: -2px 2px 4px #ff0099;
 }
