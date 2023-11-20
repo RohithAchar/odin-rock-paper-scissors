@@ -1,8 +1,9 @@
 const title = document.querySelector('#title');
 const playerScoreEle = document.querySelector('#your-score');
 const computerScoreEle = document.querySelector('#computer-score');
-const playerChoiceEle = document.querySelector('#your-choice');
-const computerChoiceEle = document.querySelector('#computer-choice');
+//const playerChoiceEle = document.querySelector('#your-choice');
+//const computerChoiceEle = document.querySelector('#computer-choice');
+const roundWinner = document.querySelector('#winner');
 const buttons = document.querySelectorAll('button');
 
 let playerChoice = "";
@@ -34,15 +35,18 @@ function randomComputerChoice(){
 }
 function addScore(playerChoice,computerChoice){
     if(playerChoice == computerChoice){
+        roundWinner.textContent = "Draw";
     }
     else if(computerChoice == "rock" && playerChoice == "paper" ||
             computerChoice == "paper" && playerChoice == "scissors" ||
             computerChoice == "scissors" && playerChoice == "rock"
         ){
             playerScore += 1;
+            roundWinner.textContent = "Computer win";
     }
     else{
         computerScore += 1;
+        roundWinner.textContent = "You win";
     }
 }
 function displayWinner(){
@@ -60,10 +64,10 @@ function displayScore(){
     playerScoreEle.textContent = "Your score : "+playerScore;
     computerScoreEle.textContent = "Computer score : "+computerScore;
 }
-function displayChoice(playerChoice,computerChoice){
-    playerChoiceEle.textContent = "Your choice : "+playerChoice;
-    computerChoiceEle.textContent = "Computer choice : "+computerChoice;
-}
+// function displayChoice(playerChoice,computerChoice){
+//     playerChoiceEle.textContent = "Your choice : "+playerChoice;
+//     computerChoiceEle.textContent = "Computer choice : "+computerChoice;
+// }
 function disableButtons(){
     buttons.forEach(btn => {
         btn.disabled = true;
@@ -79,7 +83,7 @@ function playRound(pChoice){
     title.textContent = "Round : "+round;
     playerChoice = pChoice.target.id;
     computerChoice = randomComputerChoice();
-    displayChoice(playerChoice,computerChoice);
+    //displayChoice(playerChoice,computerChoice);
     addScore(playerChoice,computerChoice);
     displayScore();
     if(playerScore == 5 || computerScore == 5){
