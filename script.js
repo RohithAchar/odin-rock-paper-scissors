@@ -40,11 +40,11 @@ function addScore(playerChoice,computerChoice){
             computerChoice == "scissors" && playerChoice == "rock"
         ){
             playerScore += 1;
-            roundWinner.textContent = "Computer win";
+            roundWinner.textContent = "You win";
     }
     else{
         computerScore += 1;
-        roundWinner.textContent = "You win";
+        roundWinner.textContent = "Computer win";
     }
 }
 function displayWinner(){
@@ -60,7 +60,7 @@ function displayWinner(){
 }
 function displayScore(){
     playerScoreEle.textContent = "Your score : "+playerScore;
-    computerScoreEle.textContent = "Computer score : "+computerScore;
+    computerScoreEle.textContent = "Computer score : "+computerScore+" ("+computerChoice+")";
 }
 // function displayChoice(playerChoice,computerChoice){
 //     playerChoiceEle.textContent = "Your choice : "+playerChoice;

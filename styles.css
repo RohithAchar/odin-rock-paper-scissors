@@ -36,12 +36,17 @@
     justify-content: space-around;
 }
 button{
-    height:150px;
-    width: 150px;
-    background-color: white;
+    width: 100px;
+    height: 100px;
     border: 0;
     cursor: pointer;
 }
-img{
-    width:100px;
+#rock{
+    background: url(images/misc-pet-rock.svg) no-repeat;
+}
+#paper{
+    background: url(images/paper.svg) no-repeat; 
+}
+#scissors{
+    background: url(images/scissors-svgrepo-com\ \(3\).svg) no-repeat;
 }
