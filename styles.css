@@ -8,11 +8,13 @@
     src: url('fonts/rainyhearts.ttf') format('truetype'); /* Adjust the path and format as needed */
     /* You can include additional src lines for different font formats (e.g., woff, woff2) */
 }
-body{
+.container{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    height: 100vh;
 }
+
 .main-container{
     text-align: center;
     width: 400px;
