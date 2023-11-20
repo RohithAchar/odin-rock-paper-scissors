@@ -18,3 +18,9 @@
     color: aqua;
     text-shadow: -2px 2px 4px #ff0099;
 }
+#winner{
+    font-family: 'retro-bold';
+    letter-spacing: 3px;
+    font-weight: 100;
+    color: #00ff00;
+}
