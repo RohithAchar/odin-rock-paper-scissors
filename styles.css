@@ -8,11 +8,14 @@
     src: url('fonts/rainyhearts.ttf') format('truetype'); /* Adjust the path and format as needed */
     /* You can include additional src lines for different font formats (e.g., woff, woff2) */
 }
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .main-container{
-    margin: 0 auto;
     text-align: center;
-    width: 500px;
-    margin-top: 20%;
+    width: 400px;
 }
 #title{
     font-family: 'retro-bold';
