@@ -11,6 +11,8 @@
 .main-container{
     margin: 0 auto;
     text-align: center;
+    width: 500px;
+    margin-top: 20%;
 }
 #title{
     font-family: 'retro-bold';
@@ -28,4 +30,18 @@
     font-family: 'retro-thin';
     font-weight: bold;
     color: #ff0000;
+}
+.button-container{
+    display: flex;
+    justify-content: space-around;
+}
+button{
+    height:150px;
+    width: 150px;
+    background-color: white;
+    border: 0;
+    cursor: pointer;
+}
+img{
+    width:100px;
 }
