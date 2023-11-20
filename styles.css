@@ -24,3 +24,8 @@
     font-weight: 100;
     color: #00ff00;
 }
+#your-score,#computer-score{
+    font-family: 'retro-thin';
+    font-weight: bold;
+    color: #ff0000;
+}
